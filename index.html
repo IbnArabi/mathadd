@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Math claculators</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Math calculators</h1>
+        <br><br>
+        <label for="add0">Addition calculator</label><br>
+        <input type="number" name="add0" id="add0" placeholder="First number">+<input type="number" name="add1" id="add1" placeholder="Second number">
+        <br>
+        <button onclick="add()">Answer</button>
+        <script>
+            function add(){
+                var no0 = document.getElementById("add0").value;
+                var no1 = document.getElementById("add1").vlaue;
+                //maths part
+                var answerofadd = no0 + no1;
+                //alert
+                alert("The answer of your question is "+ answerofadd);
+            }
+        </script>
+    </body>
+</html>
